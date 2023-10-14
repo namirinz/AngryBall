@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
     public Vector3 offset;
     public bool follow = false;
     private Vector3 velocity = Vector3.zero;
-
+    
     void FixedUpdate()
     {
         if (follow)
