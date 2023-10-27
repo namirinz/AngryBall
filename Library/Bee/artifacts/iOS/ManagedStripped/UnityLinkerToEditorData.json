@@ -983,7 +983,8 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/MainMenu.unity"
+              "Assets/Scenes/MainMenu.unity",
+              "Assets/Scenes/Stage I.unity"
             ],
             "dependencyType": 0,
             "icon": null

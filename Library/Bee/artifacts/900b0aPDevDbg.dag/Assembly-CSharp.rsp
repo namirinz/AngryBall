@@ -341,6 +341,7 @@
 "Assets/Scripts/DrawTrajectory.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/FloatingHealthBar.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/HitEnemy.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

@@ -617,8 +617,11 @@ UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
 UnityEngine.ResourcesAPIInternal::FindShaderByName
 UnityEngine.Rigidbody::get_mass
 UnityEngine.Rigidbody::AddForce_Injected
+UnityEngine.Rigidbody::set_angularVelocity_Injected
 UnityEngine.Rigidbody::set_constraints
+UnityEngine.Rigidbody::set_rotation_Injected
 UnityEngine.Rigidbody::set_useGravity
+UnityEngine.Rigidbody::set_velocity_Injected
 UnityEngine.SceneManagement.Scene::GetNameInternal
 UnityEngine.SceneManagement.SceneManager::get_sceneCount
 UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected

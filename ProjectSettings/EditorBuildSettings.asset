@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage I.unity
     guid: 44b8ef0bb8fe345249a5750706d2c3bf
+  - enabled: 1
+    path: Assets/Scenes/scene2.unity
+    guid: 3a9d48133c53ab94b89be1224bb2a6de
+  - enabled: 1
+    path: Assets/Scenes/ar_mech.unity
+    guid: f0796c5cbf126374cbd869a5b13437c4
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

@@ -2838,13 +2838,25 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rigidbody_AddForce_Injected();
 		Register_UnityEngine_Rigidbody_AddForce_Injected();
 
+		//System.Void UnityEngine.Rigidbody::set_angularVelocity_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Rigidbody_set_angularVelocity_Injected();
+		Register_UnityEngine_Rigidbody_set_angularVelocity_Injected();
+
 		//System.Void UnityEngine.Rigidbody::set_constraints(UnityEngine.RigidbodyConstraints)
 		void Register_UnityEngine_Rigidbody_set_constraints();
 		Register_UnityEngine_Rigidbody_set_constraints();
 
+		//System.Void UnityEngine.Rigidbody::set_rotation_Injected(UnityEngine.Quaternion&)
+		void Register_UnityEngine_Rigidbody_set_rotation_Injected();
+		Register_UnityEngine_Rigidbody_set_rotation_Injected();
+
 		//System.Void UnityEngine.Rigidbody::set_useGravity(System.Boolean)
 		void Register_UnityEngine_Rigidbody_set_useGravity();
 		Register_UnityEngine_Rigidbody_set_useGravity();
+
+		//System.Void UnityEngine.Rigidbody::set_velocity_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Rigidbody_set_velocity_Injected();
+		Register_UnityEngine_Rigidbody_set_velocity_Injected();
 
 	//End Registrations for type : UnityEngine.Rigidbody
 

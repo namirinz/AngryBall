@@ -38,6 +38,7 @@ extern void DragAndShoot_OnMouseDown_mE46BD9853EFB33AAE7CBD908C39ADC6F5AF5DE21 (
 extern void DragAndShoot_OnMouseDrag_m7ED1E28BAC5AED95B2B31CABADEB6A6888D27583 (void);
 extern void DragAndShoot_OnMouseUp_mB557B28895DD79A94F8E3FAA2CFC17EB3E525D6E (void);
 extern void DragAndShoot_Shoot_m15A37CA053252250ABE9D0D81C8676F92CF25FAF (void);
+extern void DragAndShoot_Update_mD9172794030438EB6A5D763EEDD79ECD16720DA8 (void);
 extern void DragAndShoot__ctor_mFDA68C87B71FACAFAA27D94337EEBB9D6CAB0D2E (void);
 extern void DrawTrajectory_Awake_mE08EC5DAFBE2030B1B7C17078FE87239AAA70FF6 (void);
 extern void DrawTrajectory_UpdateTrajectory_mFF966AC6F75CD5EC48194D5A9A5F20E578C6EBA0 (void);
@@ -49,6 +50,9 @@ extern void Enemy__ctor_mB6697627910F785A971C20C671DEFBA9D921D933 (void);
 extern void FloatingHealthBar_UpdateHealthBar_m2B22E42E4EF45FCE88E5F2DBAD372FF4340B623F (void);
 extern void FloatingHealthBar_Update_m55E2C4A671E13AF87E97AF389E947BF0D1BB095D (void);
 extern void FloatingHealthBar__ctor_mFB6A7E95FDC0BBC6C5D07D6C0DAA309D048962BF (void);
+extern void GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2 (void);
+extern void GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41 (void);
+extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
 extern void HitEnemy_OnCollisionEnter_mAC9E7415E87980A95824CD536E6093B4A65DA480 (void);
 extern void HitEnemy__ctor_mB5BF58F2A7385CF9FA0626315758BB7F72A73E24 (void);
 extern void ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7 (void);
@@ -318,7 +322,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[306] = 
+static Il2CppMethodPointer s_methodPointers[310] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -346,6 +350,7 @@ static Il2CppMethodPointer s_methodPointers[306] =
 	DragAndShoot_OnMouseDrag_m7ED1E28BAC5AED95B2B31CABADEB6A6888D27583,
 	DragAndShoot_OnMouseUp_mB557B28895DD79A94F8E3FAA2CFC17EB3E525D6E,
 	DragAndShoot_Shoot_m15A37CA053252250ABE9D0D81C8676F92CF25FAF,
+	DragAndShoot_Update_mD9172794030438EB6A5D763EEDD79ECD16720DA8,
 	DragAndShoot__ctor_mFDA68C87B71FACAFAA27D94337EEBB9D6CAB0D2E,
 	DrawTrajectory_Awake_mE08EC5DAFBE2030B1B7C17078FE87239AAA70FF6,
 	DrawTrajectory_UpdateTrajectory_mFF966AC6F75CD5EC48194D5A9A5F20E578C6EBA0,
@@ -357,6 +362,9 @@ static Il2CppMethodPointer s_methodPointers[306] =
 	FloatingHealthBar_UpdateHealthBar_m2B22E42E4EF45FCE88E5F2DBAD372FF4340B623F,
 	FloatingHealthBar_Update_m55E2C4A671E13AF87E97AF389E947BF0D1BB095D,
 	FloatingHealthBar__ctor_mFB6A7E95FDC0BBC6C5D07D6C0DAA309D048962BF,
+	GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2,
+	GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41,
+	GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368,
 	HitEnemy_OnCollisionEnter_mAC9E7415E87980A95824CD536E6093B4A65DA480,
 	HitEnemy__ctor_mB5BF58F2A7385CF9FA0626315758BB7F72A73E24,
 	ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7,
@@ -627,7 +635,7 @@ static Il2CppMethodPointer s_methodPointers[306] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[306] = 
+static const int32_t s_InvokerIndices[310] = 
 {
 	6713,
 	5330,
@@ -657,6 +665,7 @@ static const int32_t s_InvokerIndices[306] =
 	5425,
 	6830,
 	6830,
+	6830,
 	1404,
 	6830,
 	6830,
@@ -664,6 +673,9 @@ static const int32_t s_InvokerIndices[306] =
 	5369,
 	6830,
 	2789,
+	6830,
+	6830,
+	6830,
 	6830,
 	6830,
 	5330,
@@ -940,7 +952,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	306,
+	310,
 	s_methodPointers,
 	0,
 	NULL,

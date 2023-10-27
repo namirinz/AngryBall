@@ -19,6 +19,7 @@ public class DragAndShoot : MonoBehaviour
 
     [SerializeField] private CameraFollow cameraFollow;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private WindManager windManager;
 
     void Start()
     {
@@ -70,7 +71,10 @@ public class DragAndShoot : MonoBehaviour
     {
         if (!isShoot)
         { ;
-            rb.AddForce(new Vector3(force.x, force.y, force.y) * forceMultiplier);
+            // Force remove from wind
+            force = new Vector3(force.x, force.y, force.y) * forceMultiplier;
+            force -= windManager.windDirection * windManager.windForce;
+            rb.AddForce(force);
             isShoot = true;
         }
     }
@@ -85,6 +89,7 @@ public class DragAndShoot : MonoBehaviour
         if (isShoot && timePassed > 3)
         { 
             Start();
+            windManager.UpdateWind();
             gameManager.playerRemaining--;
         }
     }

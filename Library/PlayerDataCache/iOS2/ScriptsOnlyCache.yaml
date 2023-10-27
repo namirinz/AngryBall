@@ -7,12 +7,15 @@ ScriptsOnlyBuild:
     - DrawTrajectory
     - Enemy
     - FloatingHealthBar
+    - GameManager
     - HitEnemy
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
+    - Packages.Rider.Editor.RiderScriptEditorPersistedState
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
     - TMPro.TMP_ColorGradient
@@ -26,6 +29,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.XR.ARCore.Editor.dll:
+    - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.ARFoundation.dll:
     - UnityEngine.XR.ARFoundation.ARCameraBackground
     - UnityEngine.XR.ARFoundation.ARCameraManager
@@ -38,6 +43,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARKit.ARKitLoader
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
+    - UnityEditor.XR.Management.XRManagerSettingsEditor
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
@@ -139,6 +145,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ARSceneManager
     methodName: ResetScene
+  - assembly: Assembly-CSharp
+    fullTypeName: ARSceneManager
+    methodName: ChangeToScene
   - assembly: Assembly-CSharp
     fullTypeName: ARSceneManager
     methodName: ChangeToScene
@@ -272,11 +281,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6530}
     - Class: 114
+      Script: {instanceID: 6798}
+    - Class: 114
       Script: {instanceID: 6956}
     - Class: 114
       Script: {instanceID: 7620}
     - Class: 114
       Script: {instanceID: 7666}
+    - Class: 114
+      Script: {instanceID: 7840}
     - Class: 114
       Script: {instanceID: 8332}
     - Class: 114
@@ -287,9 +300,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9560}
     - Class: 114
       Script: {instanceID: 9916}
+    - Class: 114
+      Script: {instanceID: 48718}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -1346,7 +1363,7 @@ ScriptsOnlyBuild:
     className: SceneObjectGuid
   - hash:
       serializedVersion: 2
-      Hash: c8d838c24f01b9a3bfbf3900f65b5c15
+      Hash: bd8a579b2eee035af1da609a3a6edafb
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Enemy
@@ -1718,7 +1735,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: 26bf1fad123e5649e3ffbf96639b5917
+      Hash: 19fef8c555b9ca9fcb955135ff4ee875
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: DragAndShoot
@@ -2058,6 +2075,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 6e1da8c43a35c9348402c2611e4b0411
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager
   platform: 9
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
